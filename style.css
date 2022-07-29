@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Vanguard CF';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+     position: relative;
+     overflow: hidden;
+     transition: all .2s;
+
+}
+/* cursor------------------------------------------------------------------------------------------------------------------- */
+
+#smcircle{
+    position: fixed;
+    /* background-color: blue; */
+    pointer-events: none;
+    transform: translate(-100%,-50%);
+    z-index: 1111111;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: all ease-out .2s;
+}
+
+.arrowsvg {
+    opacity: 0;
+    padding: 15px;
+}
+
+.wheeldiv {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    /* background-color: rgba(255, 0, 0, 0.308); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.wheelsvg{
+    opacity: 0;
+    position: relative;
+    animation: animate 5s linear infinite both;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* NAV---------------------------------------------------------------------------------------- */
+#nav {
+    width: 100%;
+    height: 10vh;
+    /* background: gray; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 50px 10px;
+}
+.logo img{
+    width: 70px;
+    padding: 10px;
+
+}
+.ri-pause-fill{
+    position: absolute;
+    right: 3px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+
+}
+#rightnav h3{
+    /* font-weight: 100; */
+    font-size: 11px;
+    font-family: gilroy;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    opacity: 0;
+    margin-right: 35px;
+
+}
+
+#rightnav{
+    margin-right: 20px;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+    transition: all 1s;
+    right: 0;                             
+    display: flex;
+    align-items: center;
+    /* width: 230px; */
+    width: 20px;
+    height: 55px;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 50px;
+    
+}
+
+#mainhead{
+    height: 100vh;
+    /* background: rgb(238, 238, 238); */
+}
+/* MAINHEADING----------------------------------------------------------------------- */
+#mainheading{
+    height: 65vh;
+    margin: -15px 70px ;
+    overflow: hidden;
+}
+/* .xyz{
+    font-size: 130px;
+}
+ */
+
+
+.ttxt .xyz1:nth-child(2){
+    transform: translate(-110%,15%);
+    color: rgb(0, 0, 0);
+}
+.ttxt .ttx1 h2{
+    transform: translateY(15%);
+    font-size: 45px;
+}
+.ttxt .ttx1 {
+    display: flex;
+}
+.ttxt h1{
+    display: inline-block;
+    background-color: transparent    ;
+    /* font-size: 190px; */
+    font-size: 15vw;
+    text-transform: uppercase;
+    line-height: 15.5vw;
+    /* background-color: blue; */
+
+    overflow: hidden;
+    letter-spacing: -1px;
+
+}
+.ttxt:nth-child(2){
+
+    transform: translate(0,-25px);
+}
+.honors{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    transform: translate(0,-50%);
+    top: 50%;
+}
+/* SECTION------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(2n){
+    justify-content: flex-start;
+}
+
+
+
+.section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 0 70px;
+    margin: 100px 0 ;
+    align-items: center;
+    justify-content: flex-end;
+    /* pointer-events: none; */
+    /* background: #000; */
+
+
+}
+.insider{
+    width: 600px;
+    height: 500px;
+    color: #000;
+    overflow: hidden;
+}
+
+.insider .img{
+    width: 100%;
+    height: 400px;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+img{
+    transition: 2s;
+
+}
+
+
+.img img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.img3 img{
+width: 600px;
+}
+
+/* HOVER------------------------------------------------------------------------ */
+
+.tt{
+    overflow: hidden;
+
+}
+
+
+#abc{
+    color: #000;
+    transition: all .2s;
+
+}
+.insider .text{
+    color: #000;
+
+
+}
+
+.insider .text h3{
+    color: rgb(141, 141, 141);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    /* background: blue; */
+}
+
+
+
+/* FOOTER -------------------------------------------- */
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+    /* pointer-events: none; */
+    justify-content: space-between;
+    
+}
+.top{
+    margin: 120px 0 ;
+}
+.top h1{
+     /* margin: 80px; */
+     font-size: 70px;
+     font-weight: 900;
+     pointer-events: fill;
+
+}
+.circle{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: 30px;
+    pointer-events: fill;
+    transition: 2s;
+}
+
+.circle p{
+    font-size: 14px;
+    text-transform: uppercase;   
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: lighter;
+    word-spacing: 5px;
+    
+}
+.btm{
+    width: 90%;
+    margin: 20px  0 ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px ; */
+}
+#B{
+    word-spacing: 5px;
+color: rgb(92, 91, 91);
+}
+
+
+
+#A h1::after{
+
+    transition: ease-in-out 1s;
+    padding-bottom: 5px;
+}
+#A:hover{
+    /* border-bottom: 3px solid black; */
+
+}
